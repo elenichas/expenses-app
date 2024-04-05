@@ -1,10 +1,14 @@
 import './App.css'
 // import { useSnapshot } from 'valtio'
 // import { store, inc } from './store'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from './components/Layout';
 import ExpenseList from './components/expense-list/ExpenseList';
 import AddExpense from './components/add-expense/AddExpense';
+import ExpenseSearch from './components/expense-search/ExpenseSearch';
+import Profile from './components/profile/Profile';
+import Logout from './components/logout/Logout';
+
 import "./index.css"
 
 function App() {
@@ -15,7 +19,11 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element= {<ExpenseList/> } />  
-            <Route path="/Add" element= {<AddExpense/> } />  
+            <Route path="/add" element= {<AddExpense/> } />  
+            <Route path="/search" element= {<ExpenseSearch/> } />  
+            <Route path="/profile" element= {<Profile/> } />  
+            <Route path="/logout" element= {<Logout/> } />  
+           <Route path="*" element= {<Navigate to="/"/> } /> 
         </Routes>
       </Layout>
 

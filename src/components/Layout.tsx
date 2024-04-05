@@ -8,7 +8,7 @@ interface LayoutProps {
 
 export const Layout: FC<LayoutProps> = ({ children }) => {
     return (
-        <div className="main">Layout
+        <div className="main">
             <div className="left">
                 <SideBar />
             </div>
