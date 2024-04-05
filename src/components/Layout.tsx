@@ -1,7 +1,22 @@
-import React from 'react'
+import { FC } from "react"
+import SideBar from "./SideBar/Sidebar"
+import "../index.css"
 
-export const Layout = () => {
-  return (
-    <div>Layout</div>
-  )
+interface LayoutProps {
+    children: React.ReactNode
 }
+
+export const Layout: FC<LayoutProps> = ({ children }) => {
+    return (
+        <div className="main">Layout
+            <div className="left">
+                <SideBar />
+            </div>
+            <div className="right">
+                {children}
+            </div>
+        </div>
+    )
+}
+
+export default Layout;

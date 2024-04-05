@@ -1,20 +1,24 @@
-import { useState } from 'react'
 import './App.css'
 // import { useSnapshot } from 'valtio'
 // import { store, inc } from './store'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import Layout from './components/Layout';
+import ExpenseList from './components/expense-list/ExpenseList';
+import AddExpense from './components/add-expense/AddExpense';
+import "./index.css"
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     < BrowserRouter>
-      <Routes>
-        <Route>
+      <Layout>
+        <Routes>
+          <Route path="/" element= {<ExpenseList/> } />  
+            <Route path="/Add" element= {<AddExpense/> } />  
+        </Routes>
+      </Layout>
 
-        </Route>
-      </Routes>
     </BrowserRouter>
 
     // <>
