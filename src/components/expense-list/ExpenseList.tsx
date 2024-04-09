@@ -1,7 +1,21 @@
+import { FC } from "react"
+import { Expense } from "../../types";
+import ExpenseTable from "./ExpenseTable";
 
-const expenseList = () => {
+interface ExpenseListProps {
+  isLoading: boolean;
+  expenses: Expense[];
+  errorMsg: string;
+}
+
+const expenseList: FC<ExpenseListProps> = ({ isLoading, expenses, errorMsg }) => {
   return (
-    <div>expenseList</div>
+    <div className="main-content">
+      <h2 className="my-3 text-center">  Expense List </h2>
+      {isLoading && <p className="loading"> Loading...</p>}
+      {errorMsg && <p className="error-msg">{errorMsg}</p>}
+      <ExpenseTable expenses ={expenses}/>
+    </div>
   )
 }
 
