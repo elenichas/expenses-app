@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { Expense } from "../../types";
 import ExpenseTable from "./ExpenseTable";
+import AddExpense from "./AddExpense";
 
 interface ExpenseListProps {
   isLoading: boolean;
@@ -15,6 +16,11 @@ const ExpenseList: FC<ExpenseListProps> = ({
 }) => {
   // Manage the expenses state locally
   const [expenses, setExpenses] = useState<Expense[]>(initialExpenses);
+
+  // Handle adding a new expense
+  const handleAddExpense = (newExpense: Expense) => {
+    setExpenses((prevExpenses) => [...prevExpenses, newExpense]);
+  };
 
   // Handle deleting an expense
   const handleDelete = (id: number) => {
@@ -35,6 +41,10 @@ const ExpenseList: FC<ExpenseListProps> = ({
       <h2 className="my-3 text-center">Expense List</h2>
       {isLoading && <p className="loading">Loading...</p>}
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
+
+      {/* AddExpense component to allow users to add new expenses */}
+      <AddExpense onAddExpense={handleAddExpense} />
+
       {/* Pass onDelete and onEdit to ExpenseTable */}
       <ExpenseTable
         expenses={expenses}
