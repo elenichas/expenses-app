@@ -6,7 +6,12 @@ import "./NavBar.css"; // Assuming some custom CSS if needed
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg">
+    <Navbar
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      style={{ paddingLeft: "20px" }}
+    >
       <Navbar.Brand href="/">Budget App</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">

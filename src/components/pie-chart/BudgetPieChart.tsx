@@ -41,7 +41,7 @@ const BudgetPieChart: React.FC<BudgetPieChartProps> = ({
   };
 
   return (
-    <div style={{ width: "40%", margin: "0 auto", paddingTop: "20px" }}>
+    <div style={{ width: "30%", margin: "0 auto", paddingTop: "20px" }}>
       <h2 className="my-3 text-center">Remaining Budget</h2>
       {budget > 0 ? (
         <Pie data={data} options={options} />
