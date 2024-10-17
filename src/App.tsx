@@ -3,10 +3,8 @@ import "./App.css";
 // import { store, inc } from './store'
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
-import ExpenseList from "./components/expense-dashboard/ExpenseList";
-import AddExpense from "./components/expense-dashboard/AddExpense";
-import ExpenseSearch from "./components/expense-search/ExpenseSearch";
-import Profile from "./components/profile/Profile";
+import HomePage from "./pages/HomePage";
+import AnalyticsPage from "./pages/AnalyticsPage";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./index.css";
@@ -42,15 +40,14 @@ function App() {
           <Route
             path="/"
             element={
-              <ExpenseList
+              <HomePage
                 isLoading={isLoading}
                 expenses={expenses}
                 errorMsg={errorMsg}
               />
             }
           />
-          <Route path="/add" element={<AddExpense />} />
-          <Route path="/search" element={<ExpenseSearch />} />
+          <Route path="/analytics" element={<AnalyticsPage />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>

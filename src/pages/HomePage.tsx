@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
-import { Expense } from "../../types";
-import ExpenseTable from "./ExpenseTable";
-import AddExpense from "./AddExpense";
+import { Expense } from "../types";
+import ExpenseTable from "../components/expense-dashboard/ExpenseTable";
+import AddExpense from "../components/expense-dashboard/AddExpense";
 
 interface ExpenseListProps {
   isLoading: boolean;

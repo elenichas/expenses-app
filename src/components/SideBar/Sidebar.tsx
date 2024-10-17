@@ -1,8 +1,7 @@
+import { FaChartPie } from "react-icons/fa";
 import { FaHome } from "react-icons/fa";
-import { TiDocumentAdd } from "react-icons/ti";
-import { FaSearch } from "react-icons/fa";
-
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import React from "react";
 import "./SideBar.css";
 
 const Sidebar = () => {
@@ -11,19 +10,13 @@ const Sidebar = () => {
       <li className="list-item">
         <NavLink to="/">
           <FaHome size={25} />
-          <div>Dashboard</div>
+          <div>Home</div>
         </NavLink>
       </li>
       <li className="list-item">
-        <NavLink to="/add">
-          <TiDocumentAdd size={25} />
-          <div>Add Expense</div>
-        </NavLink>
-      </li>
-      <li className="list-item">
-        <NavLink to="/search">
-          <FaSearch size={25} />
-          <div>Search Expense</div>
+        <NavLink to="/analytics">
+          <FaChartPie size={25} />
+          <div>Analytics</div>
         </NavLink>
       </li>
     </ul>
