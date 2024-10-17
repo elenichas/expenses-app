@@ -92,6 +92,7 @@ const PieChart: React.FC<PieChartProps> = ({ expenses }) => {
 
   return (
     <div className="pie-chart-container">
+      <h2 className="my-3 text-center">Expenses Breakdown</h2>
       <Doughnut data={data} options={options} />
     </div>
   );
