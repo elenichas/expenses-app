@@ -47,7 +47,10 @@ function App() {
               />
             }
           />
-          <Route path="/analytics" element={<AnalyticsPage />} />
+          <Route
+            path="/analytics"
+            element={<AnalyticsPage expenses={expenses} />}
+          />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Layout>

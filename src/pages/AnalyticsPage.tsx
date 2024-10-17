@@ -1,9 +1,11 @@
 import React from "react";
+import PieChart from "../components/pie-chart/PieChart";
 
-const AnalyticsPage: React.FC = () => {
+const AnalyticsPage = ({ expenses }) => {
   return (
-    <div className="main-content">
-      <h2 className="my-3 text-center">Budget App - Analytics</h2>
+    <div>
+      <h2>Expense Breakdown</h2>
+      <PieChart expenses={expenses} />
     </div>
   );
 };
