@@ -1,5 +1,5 @@
 import { FC } from "react";
-import SideBar from "./sideBar/Sidebar";
+import NavBar from "./navBar/NavBar";
 import "../index.css";
 
 interface LayoutProps {
@@ -9,10 +9,8 @@ interface LayoutProps {
 export const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className="main">
-      <div className="left">
-        <SideBar />
-      </div>
-      <div className="right">{children}</div>
+      <NavBar />
+      <div>{children}</div>
     </div>
   );
 };

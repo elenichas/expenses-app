@@ -1,4 +1,4 @@
-.list{
+/* .list{
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -25,4 +25,4 @@
 
 .list-item .active{
     font-weight: bold;
-}
+} */
