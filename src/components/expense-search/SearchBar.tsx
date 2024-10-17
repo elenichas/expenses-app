@@ -15,12 +15,13 @@ const SearchBar: FC<SearchBarProps> = ({ onSearch }) => {
 
   return (
     <div className="search-bar-container">
+      <h3 className="my-3">Search for Expense</h3>
       <InputGroup className="mb-3">
         <InputGroup.Text id="basic-addon1">
           <FaSearch />
         </InputGroup.Text>
         <FormControl
-          placeholder="Search by description..."
+          placeholder="Search for an expense by description..."
           aria-label="Search"
           aria-describedby="basic-addon1"
           onChange={handleInputChange}

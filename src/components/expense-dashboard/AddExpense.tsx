@@ -45,51 +45,53 @@ const AddExpense: FC<AddExpenseProps> = ({ onAddExpense }) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="add-expense-form">
+    <div>
       <h3 className="my-3">Add Expense</h3>
-      <Form.Group controlId="expenseType">
-        <Form.Label>Expense Type</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter expense type (e.g., card, cash)"
-          value={expenseType}
-          onChange={(e) => setExpenseType(e.target.value)}
-        />
-      </Form.Group>
+      <Form onSubmit={handleSubmit} className="add-expense-form">
+        <Form.Group controlId="expenseType">
+          <Form.Label>Expense Type</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter expense type (e.g., card, cash)"
+            value={expenseType}
+            onChange={(e) => setExpenseType(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="expenseDate">
-        <Form.Label>Expense Date</Form.Label>
-        <Form.Control
-          type="date"
-          value={expenseDate}
-          onChange={(e) => setExpenseDate(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="expenseDate">
+          <Form.Label>Expense Date</Form.Label>
+          <Form.Control
+            type="date"
+            value={expenseDate}
+            onChange={(e) => setExpenseDate(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="expenseAmount">
-        <Form.Label>Expense Amount</Form.Label>
-        <Form.Control
-          type="number"
-          placeholder="Enter expense amount"
-          value={expenseAmount}
-          onChange={(e) => setExpenseAmount(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="expenseAmount">
+          <Form.Label>Expense Amount</Form.Label>
+          <Form.Control
+            type="number"
+            placeholder="Enter expense amount"
+            value={expenseAmount}
+            onChange={(e) => setExpenseAmount(e.target.value)}
+          />
+        </Form.Group>
 
-      <Form.Group controlId="description">
-        <Form.Label>Description</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="Enter description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        />
-      </Form.Group>
+        <Form.Group controlId="description">
+          <Form.Label>Description</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Enter description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          />
+        </Form.Group>
 
-      <Button variant="primary" type="submit" className="mt-3">
-        Add Expense
-      </Button>
-    </Form>
+        <Button variant="primary" type="submit" className="mt-3">
+          Add Expense
+        </Button>
+      </Form>
+    </div>
   );
 };
 

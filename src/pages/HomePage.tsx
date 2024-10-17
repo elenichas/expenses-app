@@ -55,15 +55,14 @@ const HomePage: FC<HomePageProps> = ({
 
   return (
     <div className="main-content">
-      <h2 className="my-3 text-center">Budget App - Home</h2>
       {isLoading && <p className="loading">Loading...</p>}
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
 
-      {/* AddExpense component to allow users to add new expenses */}
-      <AddExpense onAddExpense={handleAddExpense} />
-
       {/* SearchBar component to filter expenses by description */}
       <SearchBar onSearch={handleSearch} />
+
+      {/* AddExpense component to allow users to add new expenses */}
+      <AddExpense onAddExpense={handleAddExpense} />
 
       {/* Pass the filtered expenses to ExpenseTable */}
       <ExpenseTable

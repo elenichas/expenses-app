@@ -1,5 +1,5 @@
 import React from "react";
-import { Pie } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import "./PieChart.css"; // Import the custom CSS
 
@@ -8,12 +8,14 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 // Function to generate random colors
 const getRandomColor = () => {
-  const letters = "0123456789ABCDEF";
-  let color = "#";
-  for (let i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+  // Generate a random hue (0-360 degrees on the color wheel)
+  const hue = Math.floor(Math.random() * 360);
+
+  // Pastel colors have high lightness (80-90%) and low saturation (50-70%)
+  const saturation = Math.floor(Math.random() * 30) + 50; // 50% to 70% saturation
+  const lightness = Math.floor(Math.random() * 10) + 80; // 80% to 90% lightness
+
+  return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 };
 
 // Function to generate unique colors based on number of data points
@@ -90,7 +92,7 @@ const PieChart: React.FC<PieChartProps> = ({ expenses }) => {
 
   return (
     <div className="pie-chart-container">
-      <Pie data={data} options={options} />
+      <Doughnut data={data} options={options} />
     </div>
   );
 };
