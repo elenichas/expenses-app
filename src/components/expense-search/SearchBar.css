@@ -1,11 +1,12 @@
 /* SearchBar.css */
 
 .search-bar-container {
-  margin: 10px 0;
+  margin-top: 20px;
   width: 800px;
 }
 
 .input-group {
+  height: 60px;
 }
 
 .form-control {

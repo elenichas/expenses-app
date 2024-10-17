@@ -1,89 +1,16 @@
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-
-button:hover {
-  border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  a:hover {
-    color: #747bff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.main-content{
+.main-content {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .left {
@@ -100,31 +27,31 @@ body {
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
-.right{
-    background-color: #838383;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    position: fixed;
-    left: 200px;
-    width: 100%;
+.right {
+  background-color: #838383;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: fixed;
+  left: 200px;
+  width: 100%;
 }
 
-.loading{
+.loading {
   text-align: center;
- font-size: 25px;
- letter-spacing: 1px;
- margin: 1rem auto;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 1rem auto;
 }
 
-.success-msg{
+.success-msg {
   color: green;
   letter-spacing: 1px;
   margin-top: 4px;
   font-size: 20pxs;
 }
 
-.error-msg{
+.error-msg {
   color: rgb(128, 0, 0);
   letter-spacing: 1px;
   margin-top: 4px;

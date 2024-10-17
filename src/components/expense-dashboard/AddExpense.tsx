@@ -46,7 +46,7 @@ const AddExpense: FC<AddExpenseProps> = ({ onAddExpense }) => {
 
   return (
     <Form onSubmit={handleSubmit} className="add-expense-form">
-      <h2 className="my-3 text-center">Add Expense</h2>
+      <h3 className="my-3">Add Expense</h3>
       <Form.Group controlId="expenseType">
         <Form.Label>Expense Type</Form.Label>
         <Form.Control

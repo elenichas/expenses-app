@@ -1,41 +1,60 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Set a default font and background for the entire app */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background for the whole app */
+  color: #343a40; /* Dark text for contrast */
+  line-height: 1.6;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ensure full width for the main container and body */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.table-container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.table-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color of the scrollbar track */
 }
 
-.card {
-  padding: 2em;
+.table-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Roundness of the scrollbar thumb */
+  border: 2px solid #f1f1f1; /* Optional: border to match the track */
 }
 
-.read-the-docs {
-  color: #888;
+.table-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color when hovering over the scrollbar */
+}
+
+/* For Firefox */
+.table-container {
+  scrollbar-width: thin; /* Makes the scrollbar thinner */
+  scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+}
+
+/* Optional: add rounded corners to the table */
+.table-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table container height */
+.table-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
 }

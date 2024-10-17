@@ -55,7 +55,7 @@ const HomePage: FC<HomePageProps> = ({
 
   return (
     <div className="main-content">
-      <h2 className="my-3 text-center">Expense List</h2>
+      <h2 className="my-3 text-center">Budget App - Home</h2>
       {isLoading && <p className="loading">Loading...</p>}
       {errorMsg && <p className="error-msg">{errorMsg}</p>}
 

@@ -5,6 +5,7 @@
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 /* Form heading */
@@ -60,14 +61,14 @@
 
 /* Button hover effect */
 .add-expense-form .btn-primary:hover {
-  background-color: #fff200;
-  color: #000000;
+  background-color: #474747;
+  color: #ffffff;
 }
 
 /* Button active state */
 .add-expense-form .btn-primary:active {
-  background-color: #fff200;
-  color: #000000;
+  background-color: #474747;
+  color: #ffffff;
 }
 
 /* Form fieldsets */
