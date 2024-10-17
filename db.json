@@ -4,140 +4,140 @@
       "id": 1,
       "expense_type": "bank transfer",
       "expense_date": "07/10/2024",
-      "expense_amount": "784",
+      "expense_amount": 784,
       "description": "maintenance"
     },
     {
       "id": 2,
       "expense_type": "bank transfer",
       "expense_date": "03/01/2024",
-      "expense_amount": "4892",
+      "expense_amount": 4892,
       "description": "legal fees"
     },
     {
       "id": 3,
       "expense_type": "cash",
       "expense_date": "01/10/2024",
-      "expense_amount": "3437",
+      "expense_amount": 3437,
       "description": "conference registration"
     },
     {
       "id": 4,
       "expense_type": "bank transfer",
       "expense_date": "04/08/2024",
-      "expense_amount": "2540",
+      "expense_amount": 2540,
       "description": "taxes"
     },
     {
       "id": 5,
       "expense_type": "cash",
       "expense_date": "02/23/2024",
-      "expense_amount": "2833",
+      "expense_amount": 2833,
       "description": "employee salary"
     },
     {
       "id": 6,
       "expense_type": "bank transfer",
       "expense_date": "03/11/2024",
-      "expense_amount": "3837",
+      "expense_amount": 3837,
       "description": "software subscription"
     },
     {
       "id": 7,
       "expense_type": "cash",
       "expense_date": "01/11/2024",
-      "expense_amount": "386",
+      "expense_amount": 386,
       "description": "software subscription"
     },
     {
       "id": 8,
       "expense_type": "bank transfer",
       "expense_date": "05/28/2024",
-      "expense_amount": "3301",
+      "expense_amount": 3301,
       "description": "office supplies"
     },
     {
       "id": 9,
       "expense_type": "bank transfer",
       "expense_date": "03/03/2024",
-      "expense_amount": "1564",
+      "expense_amount": 1564,
       "description": "marketing campaign"
     },
     {
       "id": 10,
       "expense_type": "cash",
       "expense_date": "09/25/2024",
-      "expense_amount": "2556",
+      "expense_amount": 2556,
       "description": "travel expenses"
     },
     {
       "id": 11,
       "expense_type": "cheque",
       "expense_date": "07/01/2024",
-      "expense_amount": "3550",
+      "expense_amount": 3550,
       "description": "electricity bill"
     },
     {
       "id": 12,
       "expense_type": "card",
       "expense_date": "12/25/2024",
-      "expense_amount": "2525",
+      "expense_amount": 2525,
       "description": "electricity bill"
     },
     {
       "id": 13,
       "expense_type": "cheque",
       "expense_date": "06/19/2024",
-      "expense_amount": "4124",
+      "expense_amount": 4124,
       "description": "travel expenses"
     },
     {
       "id": 14,
       "expense_type": "cheque",
       "expense_date": "04/04/2024",
-      "expense_amount": "924",
+      "expense_amount": 924,
       "description": "equipment purchase"
     },
     {
       "id": 15,
       "expense_type": "card",
       "expense_date": "03/26/2024",
-      "expense_amount": "4684",
+      "expense_amount": 4684,
       "description": "marketing campaign"
     },
     {
       "id": 16,
       "expense_type": "cash",
       "expense_date": "04/25/2024",
-      "expense_amount": "1106",
+      "expense_amount": 1106,
       "description": "travel expenses"
     },
     {
       "id": 17,
       "expense_type": "bank transfer",
       "expense_date": "01/15/2024",
-      "expense_amount": "2742",
+      "expense_amount": 2742,
       "description": "IT services"
     },
     {
       "id": 18,
       "expense_type": "cheque",
       "expense_date": "10/11/2024",
-      "expense_amount": "294",
+      "expense_amount": 294,
       "description": "staff training"
     },
     {
       "id": 19,
       "expense_type": "cash",
       "expense_date": "08/17/2024",
-      "expense_amount": "4850",
+      "expense_amount": 4850,
       "description": "internet subscription"
     },
     {
       "id": 20,
       "expense_type": "card",
       "expense_date": "06/17/2024",
-      "expense_amount": "1959",
+      "expense_amount": 1959,
       "description": "insurance premium"
     }
   ]

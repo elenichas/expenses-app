@@ -1,0 +1,23 @@
+/* SearchBar.css */
+
+.search-bar-container {
+  margin: 10px 0;
+  width: 800px;
+}
+
+.input-group {
+}
+
+.form-control {
+  padding-left: 10px;
+}
+
+.input-group-text {
+  background-color: #f8f9fa; /* Light background for search icon */
+  border-right: 0;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da; /* Bootstrap's standard border color */
+}

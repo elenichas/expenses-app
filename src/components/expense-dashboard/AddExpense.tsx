@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Expense } from "../../types";
 import "./AddExpense.css";
+import React from "react";
 
 interface AddExpenseProps {
   onAddExpense: (newExpense: Expense) => void; // Prop to pass the new expense back to the dashboard
@@ -45,6 +46,7 @@ const AddExpense: FC<AddExpenseProps> = ({ onAddExpense }) => {
 
   return (
     <Form onSubmit={handleSubmit} className="add-expense-form">
+      <h2 className="my-3 text-center">Add Expense</h2>
       <Form.Group controlId="expenseType">
         <Form.Label>Expense Type</Form.Label>
         <Form.Control

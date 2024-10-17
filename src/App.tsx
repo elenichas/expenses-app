@@ -1,6 +1,5 @@
 import "./App.css";
-// import { useSnapshot } from 'valtio'
-// import { store, inc } from './store'
+import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
@@ -8,6 +7,7 @@ import AnalyticsPage from "./pages/AnalyticsPage";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [expenses, setExpenses] = useState([]);
@@ -52,29 +52,7 @@ function App() {
         </Routes>
       </Layout>
     </BrowserRouter>
-
-    // <>
-    //   <Test />
-    //   <Test2 />
-
-    // </>
   );
 }
 
-// const Test = () => {
-//   const snap = useSnapshot(store)
-//   return (
-//     <>
-//       {snap.age}
-//     </>
-//   )
-// }
-
-// const Test2 = () => {
-//   return (
-//     <>
-//       <button onClick={inc}>+</button>
-//     </>
-//   )
-// }
 export default App;

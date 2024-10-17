@@ -1,21 +1,28 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import { Expense } from "../types";
 import ExpenseTable from "../components/expense-dashboard/ExpenseTable";
 import AddExpense from "../components/expense-dashboard/AddExpense";
+import SearchBar from "../components/expense-search/SearchBar";
+import React from "react";
 
-interface ExpenseListProps {
+interface HomePageProps {
   isLoading: boolean;
   expenses: Expense[];
   errorMsg: string;
 }
 
-const ExpenseList: FC<ExpenseListProps> = ({
+const HomePage: FC<HomePageProps> = ({
   isLoading,
   expenses: initialExpenses,
   errorMsg,
 }) => {
-  // Manage the expenses state locally
   const [expenses, setExpenses] = useState<Expense[]>(initialExpenses);
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  // Sync local expenses state with initialExpenses prop whenever it changes
+  useEffect(() => {
+    setExpenses(initialExpenses);
+  }, [initialExpenses]);
 
   // Handle adding a new expense
   const handleAddExpense = (newExpense: Expense) => {
@@ -36,6 +43,16 @@ const ExpenseList: FC<ExpenseListProps> = ({
     );
   };
 
+  // Handle searching/filtering expenses by description
+  const handleSearch = (query: string) => {
+    setSearchQuery(query);
+  };
+
+  // Filter expenses based on the search query
+  const filteredExpenses = expenses.filter((expense) =>
+    expense.description.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
   return (
     <div className="main-content">
       <h2 className="my-3 text-center">Expense List</h2>
@@ -45,9 +62,12 @@ const ExpenseList: FC<ExpenseListProps> = ({
       {/* AddExpense component to allow users to add new expenses */}
       <AddExpense onAddExpense={handleAddExpense} />
 
-      {/* Pass onDelete and onEdit to ExpenseTable */}
+      {/* SearchBar component to filter expenses by description */}
+      <SearchBar onSearch={handleSearch} />
+
+      {/* Pass the filtered expenses to ExpenseTable */}
       <ExpenseTable
-        expenses={expenses}
+        expenses={filteredExpenses}
         onDelete={handleDelete}
         onEdit={handleEdit}
       />
@@ -55,4 +75,4 @@ const ExpenseList: FC<ExpenseListProps> = ({
   );
 };
 
-export default ExpenseList;
+export default HomePage;
