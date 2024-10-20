@@ -10,7 +10,14 @@ const NavBar = () => {
       bg="dark"
       variant="dark"
       expand="lg"
-      style={{ paddingLeft: "20px" }}
+      style={{
+        paddingLeft: "20px",
+        position: "fixed", // Fix the navbar at the top
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 1000, // Ensure the navbar stays on top of other content
+      }}
     >
       <Navbar.Brand href="/">Budget App</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
