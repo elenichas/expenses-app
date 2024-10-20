@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Expenses Budget App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple expenses budget app built with React, TypeScript, and Vite to help users manage their expenses and visualize their budget. The app uses a JSON Server to mock the backend for managing expenses data.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Add new expenses with details such as name, amount, and date.
+- View a list of all expenses.
+- Filter expenses by month or category.
+- Visualize spending with basic charts.
+- Responsive design for both desktop and mobile.
+- JSON Server to mock backend API for expenses data.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Frontend:** React, TypeScript, Vite, React Bootstrap
+- **Backend:** JSON Server (for API simulation)
+- **Libraries/Tools:**
+  - React Router (for navigation)
+  - Axios (for API requests)
+  - react-icons (for icons)
+  - react-bootstrap (for responsive UI)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+To run the project locally, follow these steps:
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/expenses-budget-app.git
+   cd expenses-budget-app
